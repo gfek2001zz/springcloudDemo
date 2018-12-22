@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.gao.cloud.dao.IUserDao">
+
+    <select id="findUserById" resultType="com.gao.cloud.UserVO">
+        SELECT id,
+               username,
+               name,
+               age,
+               balance
+        FROM "Moved"."TPL_USER_T"
+        where id = #{id, jdbcType=NUMERIC}
+    </select>
+</mapper>

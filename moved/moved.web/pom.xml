@@ -15,8 +15,14 @@
     <groupId>com.gao.cloud</groupId>
     <artifactId>moved.web</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>com.gao.cloud</groupId>
+            <artifactId>moved.impl</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
